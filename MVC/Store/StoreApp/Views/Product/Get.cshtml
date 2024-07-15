@@ -1,0 +1,29 @@
+@model Product
+
+@{
+    Layout = "_Layout";
+}
+
+
+
+
+
+<div class="btn-gruop">
+    <h3>@Model.ProductName</h3>
+    <p>@Model.Price</p>
+    <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="Index">
+        <i class="fa-solid fa-house"></i>
+        Home</a>
+    <a class="btn btn-outline-secondary" asp-controller="Product" asp-action="Index">
+        <i class="fa-solid fa-list"></i>
+        Products</a>
+
+</div>
+
+
+
+@section Header {
+    <div>
+        Header for only get
+    </div>
+}
